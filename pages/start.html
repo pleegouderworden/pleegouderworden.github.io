@@ -9,13 +9,17 @@
 	<title>Pleegouder worden?</title>
 
 	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
-
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
 
     <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
     <link href="../assets/css/material-kit.css" rel="stylesheet"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="../assets/js/nanobar.js"></script>
 </head>
 <link rel="stylesheet" type="text/css" href="pages_style.css">
 <body>
@@ -37,6 +41,27 @@
 		</div>
 	</div>
 </div>
+
+<div class="section-info">
+	<i class="fa fa-chevron-down" aria-hidden="true" data-toggle="collapse" data-target="#informatiebox" id="knopje" onclick="togglehelp()">
+		<div id="informatiebox" class="collapse">
+		U kunt het pleegcontract alleen of met een partner afsluiten, 
+		dat kan uw echtgenoot of echtgenote zijn maar ook iemand anders waarmee u samenwoont.
+		</div>
+	</i>
+</div>
+
+<script>
+	var simplebar = new Nanobar();
+	simplebar.go(10);
+	function togglehelp() {
+	if ($('#knopje').attr('class') == 'fa fa-chevron-up') {
+	$("#knopje").attr('class', 'fa fa-chevron-down'); 
+	} else {
+	$("#knopje").attr('class', 'fa fa-chevron-up'); 
+	}
+	};
+</script>
 
 </body>
 </html>

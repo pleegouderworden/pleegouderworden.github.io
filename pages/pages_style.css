@@ -1,13 +1,8 @@
-/* html { 
-  background: url(../images/bg.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-} */
-
 body {
 	background: none;
+}
+.bar {
+	background: #cfcfc4;
 }
 
 .section-question {
@@ -24,7 +19,6 @@ body {
 .question {
 	font-size: 10pt;
 	color: #000;
-	/* color: #fff; */
 }
 
 .btn-success {
@@ -41,6 +35,12 @@ body {
 	line-height: 35px;
 	height: 60px;
 	width: 120px;
+}
+
+.section-info {
+	font-size: 20pt;
+	text-align: center;
+	padding: 2%;
 }
 
 @keyframes fadein {
