@@ -1,6 +1,21 @@
-@import url('http://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic');
+html { 
+  background: url(images/bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
-h1 {
-	font-size: 20px;
-	font-family: 'Open Sans',Verdana,Arial;
+body {
+	background: none;
+}
+
+.section-question {
+	margin-top: 10%;
+	padding: 2%;
+}
+
+.question {
+	font-size: 25pt;
+	color: #fff;
 }
